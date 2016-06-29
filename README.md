@@ -1,4 +1,4 @@
-# Spotlight ANE V1.0.0 beta for iOS
+# Spotlight ANE V1.0.0 for iOS
 Spotlight ANE brings iOS 9 spotlight library to Adobe Air applications. With this ANE, you can index search items at runtime and even from user generated content.
 
 **Main Features:**
