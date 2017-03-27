@@ -1,4 +1,4 @@
-# Spotlight ANE V1.0.0 for iOS
+# Spotlight ANE V1.0.1 for iOS
 Spotlight ANE brings iOS 9 spotlight library to Adobe Air applications. With this ANE, you can index search items at runtime and even from user generated content.
 
 **Main Features:**
@@ -99,6 +99,9 @@ Embedding the ANE:
 	
 	<extensionID>com.myflashlab.air.extensions.spotlight</extensionID>
 	
+	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
+	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
+	
   </extensions>
 -->
 ```
@@ -106,9 +109,10 @@ Embedding the ANE:
 # Requirements 
 1. iOS SDK 9.0 or higher
 2. Air SDK 22 or higher
+3. Requires [OverrideAir](https://github.com/myflashlab/common-dependencies-ANE) dependency file.
 
 # Tech Details
-* If you are testing your app in debug mode, the ```SpotlightEvents.SEARCH_SELECTED``` listener won't be dispatched when your app is launching because the debug connection process may take a while before the app starts and the event happens before you have the time to listen to it! We hope Adobe can fix this bug in future versions of Air SDK. However, when you test your app in release or adHoc mode, the ```SpotlightEvents.SEARCH_SELECTED``` listener will be dispatched everytime your app starts because of the spotlight search item being touched.
+* If you are testing your app in debug mode, the ```SpotlightEvents.SEARCH_SELECTED``` listener might not be dispatched when your app is launching because the debug connection process may take a while before the app starts and the event happens before you have the time to listen to it! We hope Adobe can fix this bug in future versions of Air SDK. However, when you test your app in release or adHoc mode, the ```SpotlightEvents.SEARCH_SELECTED``` listener will be dispatched everytime your app starts because of the spotlight search item being touched.
 
 # Commercial Version
 http://www.myflashlabs.com/product/ios9-spotlight-air-native-extension/
@@ -120,5 +124,8 @@ http://www.myflashlabs.com/product/ios9-spotlight-air-native-extension/
 [How to get started with Spotlight ANE?](https://github.com/myflashlab/Spotlight-ANE/wiki)
 
 # Changelog
+*Mar 27, 2017 - V1.0.1*
+* Updated with the latest version of the OverrideAir ANE. you will need this dependency in your project from now on.
+
 *Jun 26, 2016 - V1.0.0*
 * beginning of the journey!

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<application xmlns="http://ns.adobe.com/air/application/21.0">
+<application xmlns="http://ns.adobe.com/air/application/24.0">
   <id>com.doitflash.spotlight</id>
-  <versionNumber>1.0.0</versionNumber>
+  <versionNumber>1.0.1</versionNumber>
   <supportedProfiles>mobileDevice</supportedProfiles>
   <filename>exSpotlight</filename>
   <name>Spotlight</name>
@@ -92,6 +92,9 @@
   <extensions>
 	
 	<extensionID>com.myflashlab.air.extensions.spotlight</extensionID>
+	
+	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
+	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
 	
   </extensions>
 </application>
