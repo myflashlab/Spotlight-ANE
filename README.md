@@ -1,4 +1,4 @@
-# Spotlight ANE V1.0.1 for iOS
+# Spotlight ANE V1.0.2 for iOS
 Spotlight ANE brings iOS 9 spotlight library to Adobe Air applications. With this ANE, you can index search items at runtime and even from user generated content.
 
 **Main Features:**
@@ -11,8 +11,7 @@ Spotlight ANE brings iOS 9 spotlight library to Adobe Air applications. With thi
 [find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/index.html?com/myflashlab/air/extensions/spotlight/package-detail.html&com/myflashlab/air/extensions/spotlight/class-list.html)  
 [How to get started? **read here**](https://github.com/myflashlab/Spotlight-ANE/wiki)
 
-**NOTICE**: the demo ANE works only after you hit the "OK" button in the dialog which opens. in your tests make sure that you are NOT calling other ANE methods prior to hitting the "OK" button.
-[Download the ANE](https://github.com/myflashlab/Spotlight-ANE/tree/master/FD/lib)
+[Download demo ANE](https://github.com/myflashlab/Spotlight-ANE/tree/master/AIR/lib)
 
 # Air Usage
 ```actionscript
@@ -124,6 +123,9 @@ http://www.myflashlabs.com/product/ios9-spotlight-air-native-extension/
 [How to get started with Spotlight ANE?](https://github.com/myflashlab/Spotlight-ANE/wiki)
 
 # Changelog
+*Mar 27, 2017 - V1.0.2*
+* optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
+
 *Mar 27, 2017 - V1.0.1*
 * Updated with the latest version of the OverrideAir ANE. you will need this dependency in your project from now on.
 
