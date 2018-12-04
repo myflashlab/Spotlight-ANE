@@ -114,9 +114,9 @@ Embedding the ANE:
 * If you are testing your app in debug mode, the ```SpotlightEvents.SEARCH_SELECTED``` listener might not be dispatched when your app is launching because the debug connection process may take a while before the app starts and the event happens before you have the time to listen to it! We hope Adobe can fix this bug in future versions of Air SDK. However, when you test your app in release or adHoc mode, the ```SpotlightEvents.SEARCH_SELECTED``` listener will be dispatched everytime your app starts because of the spotlight search item being touched.
 
 # Commercial Version
-http://www.myflashlabs.com/product/ios9-spotlight-air-native-extension/
+https://www.myflashlabs.com/product/ios9-spotlight-air-native-extension/
 
-![Spotlight ANE](http://www.myflashlabs.com/wp-content/uploads/2016/04/product_adobe-air-ane-extension-spotlight-595x738.jpg)
+[![Spotlight ANE](https://www.myflashlabs.com/wp-content/uploads/2016/06/product_adobe-air-ane-extension-spotlight-2018-595x738.jpg)](https://www.myflashlabs.com/product/ios9-spotlight-air-native-extension/)
 
 # Tutorials
 [How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
