@@ -1,24 +1,27 @@
-# Spotlight ANE V1.0.3 for iOS
+# Spotlight ANE for iOS Adobe AIR apps #
 Spotlight ANE brings iOS 9 spotlight library to Adobe Air applications. With this ANE, you can index search items at runtime and even from user generated content.
 
 **Main Features:**
-* Add search items to iOS spotlight indexing system
-* group the search items for easier managing them
-* delete all items or specefic groups
-* Listeners to be invoked as soon as your app opens from Spotlight search results
+1. Add search items to iOS spotlight indexing system
+1. group the search items for easier managing them
+1. delete all items or specefic groups
+1. Listeners to be invoked as soon as your app opens from Spotlight search results
 
-# asdoc
-[find the latest asdoc for this ANE here.](http://myflashlab.github.io/asdoc/index.html?com/myflashlab/air/extensions/spotlight/package-detail.html&com/myflashlab/air/extensions/spotlight/class-list.html)  
-[How to get started? **read here**](https://github.com/myflashlab/Spotlight-ANE/wiki)
+* [Click here for ASDOC](https://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/spotlight/package-detail.html)
+* [See the ANE setup requirements](https://github.com/myflashlab/Spotlight-ANE/blob/master/src/ANE/extension.xml)
 
-[Download demo ANE](https://github.com/myflashlab/Spotlight-ANE/tree/master/AIR/lib)
+**IMPORTANT:** Implementing ANEs in your AIR projects means you may be required to add some [dependencies](https://github.com/myflashlab/common-dependencies-ANE) or copy some frameworks or editing your app's manifest file. Our ANE setup instruction is designed in a human-readable format but you may still need to familiarize yourself with this format. [Read this post for more information](https://www.myflashlabs.com/understanding-ane-setup-instruction/)
+
+If you think manually setting up ANEs in your projects is confusing or time-consuming, you better check the [ANELAB Software](https://github.com/myflashlab/ANE-LAB/).
+
+[![The ANE-LAB Software](https://www.myflashlabs.com/wp-content/uploads/2017/12/myflashlabs-ANE-LAB_features.jpg)](https://github.com/myflashlab/ANE-LAB/)
+
+# Tech Support #
+If you need our professional support to help you with implementing and using the ANE in your project, you can join [MyFlashLabs Club](https://www.myflashlabs.com/product/myflashlabs-club-membership/) or buy a [premium support package](https://www.myflashlabs.com/product/myflashlabs-support/). Otherwise, you may create new issues at this repository and the community might help you.
 
 # Air Usage
 ```actionscript
-import com.myflashlab.air.extensions.spotlight.Spotlight;
-import com.myflashlab.air.extensions.spotlight.SpotlightEvents;
-import com.myflashlab.air.extensions.spotlight.AttributeSet;
-import com.myflashlab.air.extensions.spotlight.ContentType;
+import com.myflashlab.air.extensions.spotlight.*
 
 var _ex:Spotlight = new Spotlight();
 _ex.addEventListener(SpotlightEvents.INDEXING_SUCCESS, onIndexingSuccess);
@@ -68,70 +71,16 @@ private function onSearchSelected(e:SpotlightEvents):void
 }
 ```
 
-# Air .xml manifest
-```xml
-<!--
-FOR iOS:
--->
-	<InfoAdditions>
-		
-		<!--
-			iOS 9.0 or higher can support this ANE
-			
-			We have weak-referenced to iOS9 libraries so you still
-			can embed this ANE in earlier iOS versions. However, it
-			will work properly only on iOS 9+
-		-->
-		<key>MinimumOSVersion</key>
-		<string>9.0</string>
-		
-	</InfoAdditions>
-	
-	
-	
-	
-	
-<!--
-Embedding the ANE:
--->
-  <extensions>
-	
-	<extensionID>com.myflashlab.air.extensions.spotlight</extensionID>
-	
-	<!-- download the dependency ANEs from https://github.com/myflashlab/common-dependencies-ANE -->
-	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
-	
-  </extensions>
--->
-```
+Are you using this ANE in your project? Maybe you'd like to buy us a beer :beer:?
 
-# Requirements 
-1. iOS SDK 9.0 or higher
-2. Air SDK 22 or higher
-3. Requires [OverrideAir](https://github.com/myflashlab/common-dependencies-ANE) dependency file.
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=payments@myflashlabs.com&lc=US&item_name=Donation+to+RateMe+ANE&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
 
-# Tech Details
-* If you are testing your app in debug mode, the ```SpotlightEvents.SEARCH_SELECTED``` listener might not be dispatched when your app is launching because the debug connection process may take a while before the app starts and the event happens before you have the time to listen to it! We hope Adobe can fix this bug in future versions of Air SDK. However, when you test your app in release or adHoc mode, the ```SpotlightEvents.SEARCH_SELECTED``` listener will be dispatched everytime your app starts because of the spotlight search item being touched.
+Add your name to the below list? Donate anything more than $100 and it will be.
 
-# Commercial Version
-https://www.myflashlabs.com/product/ios9-spotlight-air-native-extension/
-
-[![Spotlight ANE](https://www.myflashlabs.com/wp-content/uploads/2016/06/product_adobe-air-ane-extension-spotlight-2018-595x738.jpg)](https://www.myflashlabs.com/product/ios9-spotlight-air-native-extension/)
-
-# Tutorials
-[How to embed ANEs into **FlashBuilder**, **FlashCC** and **FlashDevelop**](https://www.youtube.com/watch?v=Oubsb_3F3ec&list=PL_mmSjScdnxnSDTMYb1iDX4LemhIJrt1O)  
-[How to get started with Spotlight ANE?](https://github.com/myflashlab/Spotlight-ANE/wiki)
-
-# Changelog
-*Nov 18, 2018 - V1.0.3*
-* Works with OverrideAir ANE V5.6.1 or higher
-* Works with ANELAB V1.1.26 or higher
-
-*Mar 27, 2017 - V1.0.2*
-* optimized for [ANE-LAB software](https://github.com/myflashlab/ANE-LAB).
-
-*Mar 27, 2017 - V1.0.1*
-* Updated with the latest version of the OverrideAir ANE. you will need this dependency in your project from now on.
-
-*Jun 26, 2016 - V1.0.0*
-* beginning of the journey!
+## Sponsored by... ##
+<table align="left">
+    <tr>
+        <td align="left"><img src="https://via.placeholder.com/128?text=LOGO" width="60" height="60"></td>
+        <td align="left"><a href="#">your_website.com</a><br>Your company motto can be here!</td>
+    </tr>
+</table>
