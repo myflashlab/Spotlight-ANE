@@ -1,5 +1,5 @@
 # Spotlight ANE for iOS Adobe AIR apps #
-Spotlight ANE brings iOS 9 spotlight library to Adobe Air applications. With this ANE, you can index search items at runtime and even from user generated content.
+Spotlight ANE brings the spotlight library to Adobe AIR applications. With this ANE, you can index search items at runtime and even from user generated content.
 
 **Main Features:**
 1. Add search items to iOS spotlight indexing system

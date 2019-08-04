@@ -1,5 +1,8 @@
 Spotlight Air Native Extension
 
+*Aug 4, 2019 - V1.0.31*
+* Supports iOS 10+
+
 *Nov 18, 2018 - V1.0.3*
 * Works with OverrideAir ANE V5.6.1 or higher
 * Works with ANELAB V1.1.26 or higher

@@ -14,8 +14,11 @@ package com.myflashlab.air.extensions.spotlight
 	 */
 	public class Spotlight extends EventDispatcher
 	{
+		/** @private */
+		internal static const DEMO_ANE:Boolean = true;
+		
 		public static const EXTENSION_ID:String = "com.myflashlab.air.extensions.spotlight";
-		public static const VERSION:String = "1.0.3";
+		public static const VERSION:String = "1.0.31";
 		private var _context:ExtensionContext;
 		
 		private var OverrideClass:Class;
@@ -152,10 +155,5 @@ package com.myflashlab.air.extensions.spotlight
 		{
 			return _context.call("command", "isIndexingAvailable") as Boolean;
 		}
-		
-// ------------------------------------------------------------------------------------------------------------------------------------ Check Club Member
-		
-		/** @private */
-		public static const DEMO_ANE:Boolean = false;
 	}
 }
