@@ -1,4 +1,8 @@
-Spotlight Air Native Extension
+# Spotlight Air Native Extension
+
+*Aug 03, 2020 - v2.0.0*
+- Upgrade dependencies to the latest versions.
+- Fixed some minor issues and refactor native codes.
 
 *Aug 4, 2019 - V1.0.31*
 * Supports iOS 10+
